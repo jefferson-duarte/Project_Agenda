@@ -10,8 +10,13 @@ class ContactAdmin(admin.ModelAdmin):
         'phone',
         'email',
         'created_date',
+        'show',
     ]
     ordering = ['-id']
+    list_editable = [
+        'show',
+    ]
+    list_per_page = 15
 
 
 @admin.register(Category)
