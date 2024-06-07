@@ -332,3 +332,9 @@ svg {
 .btn-delete {
     background: tomato;
 }
+
+/* Generics */
+
+.center {
+    text-align: center;
+}

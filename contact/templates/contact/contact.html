@@ -3,7 +3,7 @@
 {% block content %}
 
     <div class="single-contact">
-        <h1 class="single-contact-name">
+        <h1 class="single-contact-name center">
             {{ contact.first_name }} {{ contact.last_name }}
         </h1>
 
@@ -13,6 +13,8 @@
         <p><b>Created Date:</b> {{ contact.created_date }}</p>
         <p><b>Description:</b> {{ contact.description }}</p>
         <p><b>Category:</b> {{ contact.category.name }}</p>
+
+        <hr>
 
         {% if contact.picture %}
             <p>
