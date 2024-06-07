@@ -21,6 +21,13 @@
                             </p>
                         {% endif %}
                     </div>
+                    
+                    <div class="form-group">
+                        {% if field.name == 'picture' and field.value.url %}
+                            <img src="{{ field.value.url }}" alt="{{ field.name }}">
+                        {% endif %}
+                    </div>
+
                 {% endfor %}
             </div>
 

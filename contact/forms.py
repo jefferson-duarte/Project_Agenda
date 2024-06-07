@@ -1,4 +1,3 @@
-from django.core.exceptions import ValidationError
 from contact.models import Contact
 from django import forms
 
@@ -32,6 +31,13 @@ class ContactForm(forms.ModelForm):
             }
         ),
     )
+    picture = forms.ImageField(
+        widget=forms.FileInput(
+            attrs={
+                'accept': 'image/*'
+            }
+        )
+    )
 
     class Meta:
         model = Contact
@@ -42,4 +48,5 @@ class ContactForm(forms.ModelForm):
             'email',
             'description',
             'category',
+            'picture',
         )
