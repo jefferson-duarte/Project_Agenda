@@ -187,6 +187,8 @@ svg {
 .pagination .step-links {
     display: flex;
     gap: calc(var(--spacing) * 0.8);
+    color: var(--clr-black);
+    font-weight: bold;
 }
 
 .pagination .step-links a {
@@ -337,4 +339,8 @@ svg {
 
 .center {
     text-align: center;
+}
+
+.custom-icon-arrow {
+    font-size: 22px;
 }
